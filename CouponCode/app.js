@@ -1,18 +1,4 @@
 function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
-    
-    const currentDateD1 = new Date(currentDate);
-    const expirationDateD2 = new Date(expirationDate);
-
-      if(enteredCode != correctCode){
-        return false;
-      } else if (currentDateD1 > expirationDateD2){
-        return false;
-      } else {
-        return true;
-      }
-}
-
-function checkCoupon(enteredCode, correctCode, currentDate, expirationDate){
     let expires = new Date(expirationDate);
     let current = new Date(currentDate);
     
