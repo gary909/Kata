@@ -1,5 +1,14 @@
 function divCon(x){
-
+    let myCnt = 0;
+    let myNum = 0;
+    for(let i = 0; i < x.length; i++){
+        if(typeof x[i] != 'number'){
+            myCnt = myCnt + parseInt(x[i], 10);
+        } else {
+            myNum = myNum + x[i]
+        }
+    }
+    return myNum - myCnt;
 }
 
 console.log(divCon([9, 3, '7', '3'])); //  2
