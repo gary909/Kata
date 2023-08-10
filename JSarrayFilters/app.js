@@ -1,5 +1,8 @@
 function getEvenNumbers(numbersArray){
-  // filter out the odd numbers
+    var output = numbersArray.filter(function(item) {
+        return item % 2 === 0;
+    });
+    return output;
 }
 
 console.log(getEvenNumbers([1,2,3,6,8,10])); // [2,6,8,10]
