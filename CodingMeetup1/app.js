@@ -11,9 +11,13 @@ const list2 = [
 ];  
 
 function countDevelopers(list1) {
-    // your awesome code here :)
     let myCount = 0;
-    return list1[0],[3]
+    for(let i = 0; i < list1.length; i++){
+        if(list1[i].continent == 'Europe' && list1[i].language == 'JavaScript'){
+            myCount = myCount + 1;
+        }
+    }
+    return myCount
 }
 
 
