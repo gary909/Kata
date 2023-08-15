@@ -1,5 +1,14 @@
 function evenNumbers(array, number) {
-    // good luck
+    // Remove all odd nums:
+    var output = array.filter(function(item) {
+        return item % 2 === 0;
+    });
+    // How many to remove from new array
+    let deleteAmount = output.length - number;
+    // Remove unneeded nums from array
+    output.splice(0,deleteAmount);
+    // Return;
+    return output;
 }
 
 console.log(evenNumbers([1, 2, 3, 4, 5, 6, 7, 8, 9], 3)); // [4, 6, 8,]
