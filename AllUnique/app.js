@@ -8,8 +8,6 @@ function hasUniqueChars(str){
     return true;
 }
 
-
-
 console.log(hasUniqueChars("  nAa")); // False
 console.log(hasUniqueChars("abcdef")); // True
 console.log(hasUniqueChars("aA")); // True
