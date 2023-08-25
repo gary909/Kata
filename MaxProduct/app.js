@@ -1,5 +1,13 @@
 function adjacentElementsProduct(array) {
-    // max product
+    let myArr = [];
+    // multiply and push all results into array
+    for(let i = 0; i < array.length - 1; i++){
+            myArr.push(array[i] * array[i + 1]);
+    }
+    // sort array into order
+    myArr.sort(function(a, b){return b-a})
+    // return hightest value
+    return myArr[0];
 }
 
 console.log(adjacentElementsProduct([5, 8])); // 40
