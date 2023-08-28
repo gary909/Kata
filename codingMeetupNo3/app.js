@@ -10,9 +10,19 @@ var list1 = [
   ];
 
 function isRubyComing(list) {
-    // thank you for checking out my kata :)
-
-
+    let checker = 0;
+    for(let i = 0; i < list.length; i++){
+        if(list[i].language == "Ruby"){
+            checker = checker + 1;
+        } else {
+            checker = checker;
+        }
+    }
+    if(checker > 0){
+        return true;
+    } else {
+        return false;
+    }
 }
 
 console.log(isRubyComing(list1)); // True
