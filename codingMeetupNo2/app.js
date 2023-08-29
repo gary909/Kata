@@ -10,8 +10,13 @@ const list1 = [
     },
   ];
 
-function greetDevelopers(list) {
-    // thank you for checking out my kata :)
-}
+  function greetDevelopers(list) {
+    list.forEach(function(developer) {
+      developer.greeting = `Hi ${developer.firstName}, what do you like the most about ${developer.language}?`;
+    });
+    
+    return list;
+  }
+
 
 console.log(greetDevelopers(list1)); // greeting: 'Hi Sofia, what do you like the most about Java?'
