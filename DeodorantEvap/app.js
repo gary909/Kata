@@ -1,5 +1,4 @@
 // content in ml - evap % per day - useful in %
-
 function evaporator(content, evap_per_day, threshold){ 
     let count = 0;
     content = 100;
