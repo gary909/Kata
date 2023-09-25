@@ -1,5 +1,9 @@
 function sumCubes(n){
-    // ...
+    let myCount = 0;
+    for(let i = 1; i <= n; i++){
+        myCount = myCount + (i*i*i);
+    }
+    return myCount;
 }
 
 console.log(sumCubes(1)); // 1
