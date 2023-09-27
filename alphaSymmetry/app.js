@@ -1,5 +1,18 @@
 function solve(arr){  
-    //code
+    const alphabet = 'abcdefghijklmnopqrstuvwxyz'
+    var myArr = arr.map(v => v.toLowerCase());
+    let final = [];
+
+    for (let i = 0; i < myArr.length; i++) {
+        let count = 0;
+        for (let j = 0; j < myArr[i].length; j++) {
+        if (myArr[i][j] === alphabet[j]) {
+            count++;
+            }
+        }
+        final.push(count); 
+    }
+    return final
 };
 
 console.log(solve(["abode","ABc","xyzD"])); // [4,3,1]
