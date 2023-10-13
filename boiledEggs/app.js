@@ -1,5 +1,5 @@
 function cookingTime(eggs) {
-    // TODO
+    return 5 * Math.ceil(eggs / 8);
 }
 
 console.log(cookingTime(0)); // '0'
