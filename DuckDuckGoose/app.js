@@ -1,10 +1,14 @@
 function duckDuckGoose(players, goose) {
+<<<<<<< HEAD
     // ...
     let  count = 0;
     for(let i = 0; i < goose; i++){
         
     }
     return players[0];
+=======
+    return players[(goose-1)%players.length].name
+>>>>>>> 4c569f67c41cae4f351d8c66a71a677d6433f90b
 }
 
 console.log(duckDuckGoose(["a", "b", "c", "d", "c", "e", "f", "g", "h", "z"], 1)); // "a"
