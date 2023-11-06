@@ -14,3 +14,6 @@ console.log(doomArmour(100, 20, 72)) // Return Life 48 Armour 0
 console.log(doomArmour(100, 20, 20)) // Return Life 100 Armour 0
 console.log(doomArmour(100, 100, 50)) // Return Life 100 Armour 50
 console.log(doomArmour(100, 100, 128)) // Return Life 72 Armour 0
+console.log(doomArmour(100, 100, 103)) // Return Life 97 Armour 0
+console.log(doomArmour(87, 23, 33)) // Return Life 77 Armour 0
+console.log(doomArmour(87, 34, 33)) // Return Life 87 Armour 1
