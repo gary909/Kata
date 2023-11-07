@@ -5,28 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Doom 2016 Armour Example</title>
     <script src="app.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <p>
-        Example of how Armour in Doom 2016 works.<br>
-        <br>
-        If you have 100 life and 20 armour, then git hit (10).  You'll have 100 <br>
-        life and 10 armour left.<br>
-        <br>
-        If you have 100 life and 20 armour, then git hit (30).  You'll have 90 <br>
-        life and 0 armour left.<br>
-    </p>
+    <div class="introContainer">
+        <p>
+            <IMG SRC="DoomLogo.gif" alt="Doom Logo" class="responsive">
+        </p>
+    </div>
 
-    <h1>Enter Two Numbers</h1>
-    <label for="number1">Number 1:</label>
-    <input type="number" id="number1" placeholder="Enter a number"><br>
+    <div class="container">
+        <h1>Enter Two Numbers</h1>
+        <label for="number1">Health:</label>
+        <input type="number" id="number1" placeholder="Set Health Amount"><br>
 
-    <label for="number2">Number 2:</label>
-    <input type="number" id="number2" placeholder="Enter another number"><br>
+        <label for="number2">Armour:</label>
+        <input type="number" id="number2" placeholder="Set Armour Amount"><br>
 
-    <button id="calculateButton">Enter</button>
+        <label for="number3">Hit Points</label>
+        <input type="number" id="number3" placeholder="Enter Enemy Damage"><br>
 
-    <p id="result"></p>
+        <button id="calculateButton">Enter</button><button id="resetButton" onClick="window.location.reload();">Reset</button>
+
+        <p id="result"></p>
+    </div>
 
     
 </body>
