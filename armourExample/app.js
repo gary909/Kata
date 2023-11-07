@@ -9,7 +9,7 @@ function doomArmour(health, armour, hit){
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-    // Wait for the DOM to be fully loaded before adding event listeners.
+    // Wait for the DOoM to be fully loaded before adding event listeners.
 
     var calculateButton = document.getElementById("calculateButton");
     var health1Input = document.getElementById("number1");
@@ -17,21 +17,21 @@ document.addEventListener("DOMContentLoaded", function () {
     var hitPoint3Input = document.getElementById("number3");
     var resultParagraph = document.getElementById("result");
 
+
+    
     calculateButton.addEventListener("click", function () {
         var health1 = parseFloat(health1Input.value);
         var armour2 = parseFloat(armour2Input.value);
         var hitPoint3 = parseFloat(hitPoint3Input.value);
-
+        
         if (!isNaN(health1) && !isNaN(armour2) && !isNaN(hitPoint3)) {
             //var sum = number1 + number2;
-            //resultParagraph.textContent = "Sum: " + sum;
             let initDamage = armour2 - hitPoint3;
             if(initDamage < 0){
                 //remember to use plus to add, otherwise minus reverses
                 health1 = health1 + initDamage;
                 resultParagraph.textContent = 'Health: ' + health1 + ' Armour: 0';
             } else {
-
                 resultParagraph.textContent = 'Health: ' + health1 + ' Armour: ' + initDamage;
             }
         } else {
